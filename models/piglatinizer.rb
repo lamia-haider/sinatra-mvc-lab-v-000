@@ -17,6 +17,7 @@ class PigLatinizer < Sinatra::Base
       end
     end
     latinarr.join(" ")
+    binding.pry
   end
 
 
