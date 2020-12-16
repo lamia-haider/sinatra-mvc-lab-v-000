@@ -2,7 +2,7 @@ require 'pry'
 
 class PigLatinizer < Sinatra::Base
 
-  def latinize(string)
+  def latinarray(string)
     words = string.split(" ")
     words.map do |w|
       if w.start_with?("a", "e", "i", "o", "u")
@@ -13,5 +13,10 @@ class PigLatinizer < Sinatra::Base
     end
   end
 
-  
+  def latinize(string)
+    latinarray(string).join(" ")
+  end
+
+
+
 end
