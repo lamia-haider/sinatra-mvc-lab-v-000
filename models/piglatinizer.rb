@@ -16,7 +16,6 @@ class PigLatinizer
       end
     end
     latinarr.join(" ")
-    binding.pry
   end
 
 
