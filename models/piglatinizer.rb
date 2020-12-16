@@ -7,7 +7,7 @@ class PigLatinizer
     latinarr = words.collect do |w|
       if w =~ /\A([aeiou])/
         "#{w}way"
-      else arr = w.split(/([aeiou].*)/)
+      else arr = w.split(/([aeiou].*)/i)
         "#{arr[1]}#{arr[0]}ay"
       end
     end
