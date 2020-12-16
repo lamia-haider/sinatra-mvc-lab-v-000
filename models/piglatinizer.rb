@@ -2,6 +2,11 @@ require 'pry'
 
 class PigLatinizer < Sinatra::Base
 
+
+  def initialize(user_input)
+    latinize(user_input)
+  end
+
   def latinarray(string)
     words = string.split(" ")
     words.map do |w|
