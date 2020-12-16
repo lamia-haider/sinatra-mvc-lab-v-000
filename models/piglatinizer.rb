@@ -7,8 +7,8 @@ class PigLatinizer < Sinatra::Base
     latinize(user_input)
   end
 
-  def latinarray(string)
-    words = string.split(" ")
+  def latinarray(user_input)
+    words = user_input.split(" ")
     words.map do |w|
       if w.start_with?("a", "e", "i", "o", "u")
         "#{w}way"
@@ -18,8 +18,8 @@ class PigLatinizer < Sinatra::Base
     end
   end
 
-  def latinize(string)
-    latinarray(string).join(" ")
+  def latinize(user_input)
+    latinarray(user_input).join(" ")
   end
 
 
