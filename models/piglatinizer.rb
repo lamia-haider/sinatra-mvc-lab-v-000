@@ -12,6 +12,4 @@ class PigLatinizer < Sinatra::Base
       end
     end
   end
-  binding.pry
-
 end
