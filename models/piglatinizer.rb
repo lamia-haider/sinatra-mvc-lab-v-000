@@ -1,6 +1,6 @@
 require 'pry'
 
-class PigLatinizer 
+class PigLatinizer
 
   def initialize(user_input)
     latinize(user_input)
