@@ -17,11 +17,11 @@ class PigLatinizer < Sinatra::Base
       end
     end
   end
-  binding.pry
 
   def latinize(user_input)
     latinarray(user_input).join(" ")
   end
+binding.pry
 
 
 
