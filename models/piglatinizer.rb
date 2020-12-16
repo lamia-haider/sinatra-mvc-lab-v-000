@@ -2,10 +2,6 @@ require 'pry'
 
 class PigLatinizer
 
-  def initialize(user_input)
-    latinize(user_input)
-  end
-
   def latinize(user_input)
     words = user_input.split(" ")
     latinarr = words.collect do |w|
