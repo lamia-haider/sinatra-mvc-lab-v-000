@@ -11,7 +11,6 @@ class PigLatinizer < Sinatra::Base
         "#{w[1]}#{w[0]}ay"
       end
     end
-    binding.pry
   end
-
+  binding.pry
 end
