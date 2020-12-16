@@ -7,7 +7,7 @@ class PigLatinizer < Sinatra::Base
     words.map do |w|
       if w.start_with?("a", "e", "i", "o", "u")
         "#{w}way"
-      else w.split(/([aeiou].*))
+      else w.split(/([aeiou].*)/)
         "#{w[1]}#{w[0]}ay"
       end
     end
