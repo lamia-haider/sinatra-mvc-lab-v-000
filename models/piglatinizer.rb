@@ -7,7 +7,7 @@ class PigLatinizer < Sinatra::Base
     latinize(user_input)
   end
 
-  def latinarray(user_input)
+  def latinize(user_input)
     words = user_input.split(" ")
     latinarr = words.collect do |w|
       if w.start_with?("a", "e", "i", "o", "u")
