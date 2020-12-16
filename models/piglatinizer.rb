@@ -2,7 +2,7 @@ require 'pry'
 
 class PigLatinizer < Sinatra::Base
 
-  def words(string)
+  def latinize(string)
     words = string.split(" ")
     words.map do |w|
       if w.start_with?("a", "e", "i", "o", "u")
@@ -10,8 +10,8 @@ class PigLatinizer < Sinatra::Base
       else arr = w.split(/([aeiou].*)/)
         "#{arr[1]}#{arr[0]}ay"
       end
-      words.join(" ")
     end
   end
-  binding.pry
+
+  
 end
