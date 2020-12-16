@@ -9,19 +9,16 @@ class PigLatinizer < Sinatra::Base
 
   def latinarray(user_input)
     words = user_input.split(" ")
-    words.collect do |w|
+    latinarr = words.collect do |w|
       if w.start_with?("a", "e", "i", "o", "u")
         "#{w}way"
       else arr = w.split(/([aeiou].*)/)
         "#{arr[1]}#{arr[0]}ay"
       end
     end
+    latinarr.join(" ")
   end
 
-  def latinize(user_input)
-    latinarray(user_input).join(" ")
-  end
-binding.pry
 
 
 
