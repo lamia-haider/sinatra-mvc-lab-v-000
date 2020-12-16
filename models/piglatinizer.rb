@@ -6,9 +6,8 @@ class PigLatinizer < Sinatra::Base
     words = string.split(" ")
     words.map do |w|
       if w.start_with?("a, e, i, o, u")
-        w = "#{w}way"
+        "#{w}way"
       end
-      latin
     end
   end
 
