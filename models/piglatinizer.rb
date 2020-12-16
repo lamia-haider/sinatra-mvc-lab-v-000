@@ -10,7 +10,7 @@ class PigLatinizer < Sinatra::Base
       else arr = w.split(/([aeiou].*)/)
         "#{arr[1]}#{arr[0]}ay"
       end
-      
+      words.join(" ")
     end
   end
   binding.pry
