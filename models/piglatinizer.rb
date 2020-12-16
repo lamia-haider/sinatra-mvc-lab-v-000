@@ -16,6 +16,7 @@ class PigLatinizer < Sinatra::Base
         "#{arr[1]}#{arr[0]}ay"
       end
     end
+    binding.pry
   end
 
   def latinize(user_input)
